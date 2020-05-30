@@ -1,0 +1,174 @@
+/* Cascading stylesheet for the web page "Kitchen Blue"
+   Created by Harrison Kong
+   Copyright (C) Coursera 2020 */
+
+body {
+  color: #5a5a5a;
+  background-color: #075AAB;
+  overflow-x: hidden;
+}
+
+input {
+  width: 30%;
+}
+
+label {
+  color: white;
+  font-size: 1.2rem;
+  text-align: left;
+  text-shadow: 1px 1px 5px black;
+  width: 20rem;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+p {
+  color: #becbff;
+  font-size: 1.2rem;
+  text-align: center;
+  text-shadow: 1px 1px 5px black;
+}
+
+h1 {
+  color: white;
+  text-shadow: 3px 3px 10px black;
+}
+
+li {
+  color: #becbdd;
+  font-size: 1rem;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+.button {
+  margin: auto;
+  max-width: 65%;
+}
+
+.dish-image {
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px black;
+}
+
+.dish-image-div {
+  margin-bottom: 1.2rem;
+}
+
+.dish-ingredients-div {
+  color: white;
+  margin: 0.7rem auto 3.5rem auto;
+  max-width: 50%;
+}
+
+.dish-title-div {
+  font-size: 1.5rem;
+  margin: auto;
+  max-width: 88%;
+  text-shadow: 3px 3px 10px black;
+}
+
+.hero {
+  width: 100%;
+}
+
+.section-heading {
+  font-size: 3.3em;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section-subheading {
+  color: white;
+  font-size: 2em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 3px 3px 10px black;
+}
+
+.section-description {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.section-divider {
+  margin: 2rem auto;
+  opacity: 0.75;
+  text-align: center;
+}
+
+.section-divider img {
+  height: auto;
+  width: 90%;
+}
+
+.subsection-divider {
+  background-image: linear-gradient(to right, rgba(136, 159, 179, 0), rgba(136, 159, 179, 0.75), rgba(136, 159, 179, 0));
+  border: 0;
+  height: 1px;
+  margin: 2rem 10%;
+  width: 80%;
+}
+
+.subsection-heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 3px 3px 10px black;
+}
+
+.textfield {
+  margin: auto;
+  width: 60%;
+}
+
+#query-form {
+  margin: auto;
+  max-width: 85%;
+}
+
+/* FOOTER
+------------------------- */
+
+footer {
+  /* background-color: #34699a; */
+  /* background-image: linear-gradient(to right top, #34699a, #113f67); */
+  padding-bottom: 4rem;
+  padding-top: 1rem;
+  text-align: center;
+  text-shadow: 2px 2px 10px black;
+}
+
+.copyright-text {
+  color: #becbff;
+}
+
+/* RESPONSIVE ADJUSTMENTS
+-------------------------------- */
+
+/* ----- MEDIUM WIDE ----- */
+
+@media only screen and (max-width: 767px) {
+
+  .button {
+    max-width: 100%;
+  }
+
+  .textfield {
+    margin: auto;
+    width: 90%;
+  }
+
+}

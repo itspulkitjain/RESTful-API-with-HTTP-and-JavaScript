@@ -1,0 +1,71 @@
+<!doctype html>
+
+<!-- Web page "Kitchen Blue"     -->
+<!-- Created by Harrison Kong    -->
+<!-- Copyright (C) Coursera 2020 -->
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="FaviconIcon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico?v=2">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv=“Pragma” content=”no-cache”>
+    <meta http-equiv=“Expires” content=”-1″>
+    <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/kitchenblue.css?v=1">
+
+    <title>Kitchen Blue?</title>
+
+</head>
+
+<body>
+
+    <img class="hero" src="images/banner.jpg" alt="banner">
+
+    <h1 class='section-heading'>Kitchen Blue?</h1>
+    <h2 class='section-subheading'>Recipe Search by Ingredients</h2>
+    <p><code class="copyright-text">Powered by <a href="http://www.recipepuppy.com/about/api/" target= "_blank">🐶 Recipe Puppy</a></code></p>
+
+    <div class="section-description">
+
+        <p class="section-subheading">
+            <form id="query-form">
+                <div>
+                    <label for="ingredients">Ingredients (commas seperated):</label><input class="textfield" id="ingredients" type="text" name="ingredients" placeholder="e.g. beef, potato (optional)" onChange="sanitizeInputs()" />
+                </div>
+                <div>
+                    <label for="contains">Dish Name Contains (no commas):</label><input class="textfield" id="contains" type="text" name="contains" placeholder="e.g. spaghetti (optional)" onChange="sanitizeInputs()" /></div>
+                <div class="button">
+                    <br />
+                    <input class="button" type="button" value="Reset" id="resetButton" onClick="this.form.reset();resetResults()" />
+                    <input class="button" type="submit" value="Search ..." id="searchButton" />
+                </div>
+            </form>
+        </p>
+
+        <div class="section-subheading" id="search-results-heading"></div>
+        <div class="results-div" id="results"></div>
+
+</body>
+
+<footer>
+    <div class="section-divider"><img src="images/infinity-line.png"></div>
+
+    <br />
+    <p><code class="copyright-text">Search powered by <a href="http://www.recipepuppy.com/about/api/" target= "_blank">🐶 Recipe Puppy</a></code></p>
+
+    <code class="copyright-text">Crafted with ❤️ at <a href="https://coursera.org/" target= "_blank">Coursera</a></code>
+
+</footer>
+
+<!-- JQuery Scripts -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!-- Our codes -->
+<script src="js/kitchenblue.js?v=1"></script>
+
+</html>
